@@ -1,0 +1,27 @@
+{
+  "emmet.includeLanguages": {
+    "astro": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "jsx": "javascriptreact",
+    "tsx": "typescriptreact",
+    "vue-html": "html",
+    "markdown": "html"
+  },
+  "files.associations": {
+    "*.astro": "astro",
+    "*.js": "javascript",
+    "*.ts": "typescript",
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    "*.json": "json",
+    "*.md": "markdown",
+    "*.py": "python",
+    "*.sql": "sql",
+    "*.sh": "shellscript"
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}
+

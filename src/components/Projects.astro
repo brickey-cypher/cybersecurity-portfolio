@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro'
+import MyModal from '../components/MyModal.jsx'
+
+const projects = [
+  {
+    title: 'Security Incident & Assessment Report',
+    description: 'Investigated a web-based malware incident...',
+    details: 'Used tcpdump to analyze redirection patterns...',
+  },
+  {
+    title: 'Risk Register',
+    description: 'Conducted a risk assessment for a coastal bank...',
+    details: 'Evaluated key assets including funds, user databases...',
+  },
+  // Add more projects here...
+]
+---
+
+<Layout title="Projects">
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-extrabold mb-8 text-center">My Projects</h1>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {
+        projects.map((project) => (
+          <MyModal
+            client:load
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            details={project.details}
+          />
+        ))
+      }
+    </div>
+  </section>
+</Layout>
+
+
+
