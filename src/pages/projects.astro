@@ -75,18 +75,17 @@ const projects = [
     <h1 class="text-4xl font-extrabold mb-8 text-center">My Projects</h1>
 
     <div class="grid md:grid-cols-2 gap-8">
-    {
-  projects.map((project) => (
-    <MyModal
-      client:load
-      key={project.title}
-      title={project.title}
-      description={project.description}
-      details={project.details}
-    />
-  ))
-}
+      {
+        projects.map((project) => (
+          <MyModal
+            client:load
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            details={project.details}
+          />
+        ))
+      }
     </div>
   </section>
 </Layout>
-
