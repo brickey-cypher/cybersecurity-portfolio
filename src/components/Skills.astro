@@ -1,0 +1,21 @@
+---
+const skills = [
+  'Cybersecurity Fundamentals',
+  'Network Security & Monitoring',
+  'Social Engineering Defense',
+  'Linux & Command Line',
+  'Python Scripting',
+  'Log Analysis (Splunk, Wireshark)',
+  'Incident Response',
+  'Vulnerability Assessment',
+  'SQL & Database Querying',
+  'Technical Problem Solving',
+]
+---
+
+<section class="bg-white rounded-md shadow-md p-6 max-w-4xl mx-auto my-12">
+  <h2 class="text-3xl font-semibold mb-6 text-center text-black">Skills</h2>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-black list-disc list-inside">
+    {skills.map((skill) => <li>{skill}</li>)}
+  </ul>
+</section>
